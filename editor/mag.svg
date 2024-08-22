@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="11.263mm" height="11.524mm" version="1.1" viewBox="0 0 11.263 11.524" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-31.089 -8.6655)" stroke-linecap="round">
+  <g transform="translate(4.8284 .044905)" stroke="#d5d5d5">
+   <circle cx="32.939" cy="13.206" r="3.9367" fill="#bebebe" fill-opacity=".29495" stroke-linejoin="round" stroke-width="1.2965"/>
+   <path d="m27.093 19.312 3.0053-3.117" fill="none" stroke-width="1.665"/>
+  </g>
+  <g transform="translate(0 .29899)" stroke="#dadada" stroke-linejoin="round" stroke-width="1.4158">
+   <rect x="50.818" y="10.302" width=".8777" height="7.8993" fill="none"/>
+   <rect transform="rotate(90)" x="13.813" y="-55.206" width=".8777" height="7.8993" fill="#efefef" fill-opacity=".29495"/>
+  </g>
+  <rect transform="rotate(90)" x="14.112" y="-25.676" width=".8777" height="7.8993" fill="#efefef" fill-opacity=".29495" stroke="#dadada" stroke-linejoin="round" stroke-width="1.4158"/>
+ </g>
+</svg>
