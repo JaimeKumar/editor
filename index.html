@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<link rel="icon" href="resources/favicon.svg">
+		<link rel="stylesheet" href="editor/360style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+		<link rel='stylesheet' id='elementor-icons-css'  href='https://360travel.co.uk/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.9.1' type='text/css' media='all' />
+		<title>360 Editor</title>
+	</head>
+	<body>
+		<div class="whiteOPC"></div>
+		<div class="tabs">
+			<input id="clearTab" type="tabClear" name="" value="CLEAR" onclick="clearArea()" readonly>
+			<input id="sumTab" type="tab" name="" value="FLT SUMMARY" onclick="tabSummary()" readonly>
+			<input id="itinTab" type="tab" name="" value="FLT & HTL ITIN" onclick="tabItin()" readonly>
+			<input id="hotelTab" type="tab" name="" value="HTL SUMMARY" onclick="tabHotel()" readonly>
+			<input id="euroTab" type="tab" name="" value="EURO*" onclick="tabEuro()" readonly>
+			<input id="railTab" type="tab" name="" value="RAIL" onclick="tabRail()" readonly>
+			<input id="helpTab" type="tabHelp" name="" value="EDITOR HELP" onclick="tabHelp()" readonly>
+			<input id="copyTab" type="tabCopy" name="" value="COPY" onclick="tabCopy()" disabled=true; readonly>
+			<input id="checkin" type="tabCopy" name="" value="CHECK-IN" onclick="checkin()" disabled=true; readonly>
+			<input id="checkinBox" type="checkin" name="" placeholder="Input time here">
+		</div>
+		<div class="inputBox">
+			<img class="logo" src="resources/360logo.png" />
+			<div id="copiedStatus" class="copiedStatus">COPIED</div>
+			<textarea id="summaryInput" required="required" title="" onfocus="hideHelp()" style="font-family: Courier New;">
+			
+			</textarea>
+			<span id="noFF">No Frequent Flyer</span>
+			<span id="message" style="font-size: 0.9rem;"></span>
+			<div id="iframeContainer" class="iframeContainer">
+				<iframe id="iframeItself" type="text/html" src="" allow="clipboard-write;" width="55%" height="100%" style="border: none;"></iframe>
+			</div>
+		</div>
+		<p id="copyFrame" style="position: absolute; top: 190px; left: 14%; white-space: pre-wrap; FONT-FAMILY: courier new; color: #1f497d; font-size: 11pt;"></p>
+		<div class="tabs zoom">
+			<a href="https://360travel.co.uk/fbc" class="fbcLink">Manual Fare Build</a>
+			<div class="minus" title="Reduce font-size" onclick="zoomMinus()"></div>
+			<div class="mag" title="Reset font-size" onclick="resetfont()"></div>
+			<div class="plus" title="Increase font-size" onclick="zoomPlus()"></div>
+		</div>
+		
+		<div id="ffDialogue" class="ffDialogue">
+			<div id="ffBox" class="ffBox">
+			</div>
+		</div>
+
+		<script src="360js-v2.4.js"></script>
+	</body>
+</html>
