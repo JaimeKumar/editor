@@ -11,7 +11,7 @@ html {
 body {
 	font-weight: 400;
 	background-color: white;
-	background-image: url('../resources/business-travel.jpg'); 
+	background-image: url('business-travel.jpg'); 
 	background-position: center center; 
 	background-repeat: no-repeat;
 	background-size: cover;
